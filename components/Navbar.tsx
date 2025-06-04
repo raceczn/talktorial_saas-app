@@ -8,9 +8,13 @@ const Navbar = () => {
     <nav className="navbar">
       <Link href="/">
         <div className="flex items-center gap-2.5 cursor-pointer">
-          <Image src="/images/logo.svg" alt="logo" width={44} height={44} />
+          <Image src="/images/logo.png" alt="logo" width={50} height={50} />
+          <span className="hidden sm:inline text-xl font-bold tracking-wide text-blue-900 uppercase">
+            TALKtorial
+          </span>
         </div>
       </Link>
+
       <div className="flex items-center gap-8">
         <NavItems />
         <SignedOut>

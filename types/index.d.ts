@@ -15,6 +15,7 @@ enum Subject {
   economics = "economics",
   finance = "finance",
   business = "business",
+  psychology = "psychology",
 }
 
 type Companion = Models.DocumentList<Models.Document> & {

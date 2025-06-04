@@ -5,6 +5,7 @@ export const subjects = [
   "history",
   "coding",
   "economics",
+  "psychology",
 ];
 
 export const subjectsColors = {
@@ -14,6 +15,7 @@ export const subjectsColors = {
   coding: "#FFC8E4",
   history: "#FFECC8",
   economics: "#C8FFDF",
+  psychology: "#FFB6C1",
 };
 
 export const voices = {
@@ -27,7 +29,7 @@ export const recentSessions = [
     subject: "science",
     name: "Neura the Brainy Explorer",
     topic: "Neural Network of the Brain",
-    duration: 45,
+    duration: 15,
     color: "#E5D0FF",
   },
   {
@@ -35,7 +37,7 @@ export const recentSessions = [
     subject: "maths",
     name: "Countsy the Number Wizard",
     topic: "Derivatives & Integrals",
-    duration: 30,
+    duration: 20,
     color: "#FFDA6E",
   },
   {
@@ -51,7 +53,7 @@ export const recentSessions = [
     subject: "coding",
     name: "Codey the Logic Hacker",
     topic: "Intro to If-Else Statements",
-    duration: 45,
+    duration: 15,
     color: "#FFC8E4",
   },
   {
