@@ -68,18 +68,19 @@ export const addToSessionHistory = async (companionId: string) => {
     return data;
 }
 
-export const getRecentSessions = async (limit = 10) => {
+export const getRecentSessions = async (limit = 8) => {
     const supabase = createSupabaseClient();
     const { data, error } = await supabase
-        .from('session_history')
-        .select(`companions:companion_id (*)`)
-        .order('created_at', { ascending: false })
-        .limit(limit)
+        .from('companions')
+        .select('*')
+        .order('created_at', { ascending: false }) // optional: adjust based on your sorting needs
+        .limit(limit);
 
-    if(error) throw new Error(error.message);
+    if (error) throw new Error(error.message);
 
-    return data.map(({ companions }) => companions);
-}
+    return data;
+};
+
 
 export const getUserSessions = async (userId: string, limit = 10) => {
     const supabase = createSupabaseClient();
